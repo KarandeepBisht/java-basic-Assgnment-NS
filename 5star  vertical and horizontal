@@ -1,0 +1,13 @@
+static void vertical5(){
+    for(int i=0; i<5; i++){
+        System.out.println("*");
+    }
+//Enter your code here
+}
+
+static void horizontal5(){
+    for(int i=0; i<5; i++){
+        System.out.print("* ");
+    }
+//Enter your code here
+}
