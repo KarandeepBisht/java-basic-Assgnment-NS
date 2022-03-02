@@ -1,0 +1,28 @@
+import java.io.*; // for handling input/output
+import java.util.*; // contains Collections framework
+
+// don't change the name of this class
+// you can add inner classes if needed
+class Main {
+	public static void main (String[] args) {
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        System.out.print(conditional(n));
+    }
+        static String conditional(int n){
+            switch(n){
+                case 1:
+                return "one";
+                case 2:
+                return "two";
+                case 3: 
+                return "three";
+                case 4: 
+                return "four";
+                case 5: 
+                return "five";
+                default : 
+                return "Greater than 5";
+                }
+        }
+}
