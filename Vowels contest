@@ -1,0 +1,25 @@
+import java.io.*; // for handling input/output
+import java.util.*; // contains Collections framework
+
+// don't change the name of this class
+// you can add inner classes if needed
+class Main {
+	public static void main (String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        String str=sc.next();
+        int count=0;
+        for(int i=1; i<n; i+=2){
+            int temp1=Character.compare(str.charAt(i), 'a');
+            int temp2=Character.compare(str.charAt(i), 'e');
+            int temp3=Character.compare(str.charAt(i), 'i');
+            int temp4=Character.compare(str.charAt(i), 'o');
+            int temp5=Character.compare(str.charAt(i), 'u');
+            if(temp1==0 || temp2==0 || temp3==0 || temp4==0 || temp5==0){
+                count++;
+            }
+        }
+        System.out.print(count);
+                      // Your code here
+	}
+}
