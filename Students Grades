@@ -1,0 +1,35 @@
+import java.io.*; // for handling input/output
+import java.util.*; // contains Collections framework
+
+// don't change the name of this class
+// you can add inner classes if needed
+class Main {
+	public static void main (String[] args) {
+		Scanner in=new Scanner(System.in);
+		float sub_1 = in.nextFloat();
+        float sub_2 = in.nextFloat();
+        float sub_3 = in.nextFloat();
+        float sub_4 = in.nextFloat();
+        float sub_5 = in.nextFloat();
+        float total;
+        float Perc;
+        total = sub_1 + sub_2 + sub_3 + sub_4 + sub_5;
+        Perc = (float)((total / 500.0) * 100);
+		if(Perc>=80)
+		{
+			System.out.println("A");
+			}
+			else if(Perc<=80 && Perc>=60)
+			{
+			System.out.println("B");
+			}
+			else if(Perc<60 && Perc>=40)
+			{
+				System.out.println("C");
+			}
+			else
+			{
+				System.out.println("D");
+			}
+	}
+}
