@@ -1,0 +1,10 @@
+static int EvenOrOdd(int N){
+    if(N%2==0){
+        return 0;
+    }
+    else
+    {
+        return 1;
+    }
+//enter your code here
+}
