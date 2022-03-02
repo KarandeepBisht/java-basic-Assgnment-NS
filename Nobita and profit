@@ -1,0 +1,4 @@
+static int Profit(int C, int S){
+    return S - C;
+//Enter your code here
+}
